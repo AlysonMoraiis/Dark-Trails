@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Fases/Menu.unity
     guid: 59c5305887feca74d85d6ad9e41a7196
   - enabled: 1
-    path: Assets/Fases/Tutorial..unity
-    guid: e1612c898cff13a43af4496ce45458af
-  - enabled: 1
     path: Assets/Fases/Fase1.unity
     guid: daa024e1d5fba0a44a61459be94beb52
   - enabled: 1

@@ -48,7 +48,7 @@ TextureImporter:
       213: 5033836046189932208
     second: bloodexplosion_14
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -68,6 +68,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -77,8 +79,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -99,9 +101,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -455,6 +461,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      bloodexplosion_3: -8571401477349803432
+      bloodexplosion_7: -6394786052943870844
+      bloodexplosion_9: 8446164149714251567
+      bloodexplosion_2: 3488652361872490679
+      bloodexplosion_0: -6747524232663611740
+      bloodexplosion_11: 5466884336209937128
+      bloodexplosion_14: 5033836046189932208
+      bloodexplosion_1: -375006334410832176
+      bloodexplosion_6: -8718311683009656988
+      bloodexplosion_10: 2453610908021715523
+      bloodexplosion_13: -1431914305099675354
+      bloodexplosion_4: -9044159736745907480
+      bloodexplosion_5: -695299917916397577
+      bloodexplosion_12: -3257619819568047494
+      bloodexplosion_8: -1701402464199509415
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

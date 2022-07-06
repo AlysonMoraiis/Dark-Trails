@@ -6,21 +6,25 @@ using UnityEngine.SceneManagement;
 public class SceneTransitions : MonoBehaviour
 {
     public Animator transitionAnim;
-    public string sceneName;
+    public Player _player;
 
-    void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(LoadScene());
-
-        }
+        _player.podeMover = Time.time + 2.5f;
+        StartCoroutine(StartScene());
     }
 
-    IEnumerator LoadScene()
+    public IEnumerator LoadScene()
     {
+        yield return new WaitForSeconds(0.8f);
         transitionAnim.SetTrigger("end");
-        yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(sceneName);
+        yield return new WaitForSeconds(0.8f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    IEnumerator StartScene()
+    {
+        transitionAnim.SetTrigger("Start");
+        yield return new WaitForSeconds(0.8f);
     }
 }

@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    [SerializeField] private KillText _killText;
+
     // Update is called once per frame
     void Update()
     {
@@ -25,7 +27,7 @@ public class PauseMenu : MonoBehaviour
         }
         
     }
-    void Resume()
+    public void Resume()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
@@ -54,6 +56,7 @@ public class PauseMenu : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        _killText.Att();
         Resume();
     }
 }
