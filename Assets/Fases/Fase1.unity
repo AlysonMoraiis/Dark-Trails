@@ -214,7 +214,8 @@ PrefabInstance:
         type: 3}
       propertyPath: _player
       value: 
-      objectReference: {fileID: 2038264098}
+      objectReference: {fileID: 8889396002035876803, guid: 87d5feefcad0366469fb9b221373bd87,
+        type: 3}
     - target: {fileID: 4497906005950676074, guid: d8b6c4d14bf69ec469280255d8c0a256,
         type: 3}
       propertyPath: transitionAnim
@@ -497,6 +498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CollisionDetection
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889396002035876803, guid: 87d5feefcad0366469fb9b221373bd87,
+        type: 3}
+      propertyPath: vitimas
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8889396002035876803, guid: 87d5feefcad0366469fb9b221373bd87,
         type: 3}
@@ -810,18 +816,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7318b4d26dcbc7e4c8c65e370907cdb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2038264098 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8889396002035876803, guid: 87d5feefcad0366469fb9b221373bd87,
-    type: 3}
-  m_PrefabInstance: {fileID: 1074146559}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b551e3aaa0be0a47bb523cf05db7d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2078459274

@@ -10,6 +10,10 @@ public class SceneTransitions : MonoBehaviour
 
     private void Start()
     {
+        if(_player == null)
+        {
+            Debug.Log("Player is null");
+        }
         _player.podeMover = Time.time + 2.5f;
         StartCoroutine(StartScene());
     }

@@ -21,7 +21,7 @@ public class Vitima : MonoBehaviour
             GetComponent<AudioSource>().Play();
             GetComponent<Renderer>().enabled = false;
             Instantiate(bloodExplosion, transform.position, Quaternion.identity);
-            Destroy(gameObject, 2);
+            Destroy(gameObject, 1.5f);
         }
         
     }

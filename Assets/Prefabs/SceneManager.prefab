@@ -45,5 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 0}
-  sceneName: Scene1
-  _player: {fileID: 0}
+  _player: {fileID: 8889396002035876803, guid: 87d5feefcad0366469fb9b221373bd87, type: 3}

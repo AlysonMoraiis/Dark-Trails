@@ -27,12 +27,19 @@ public class Player : MonoBehaviour
 
     [SerializeField] private KillText _killText;
 
+    private bool _inEditor = false;
+
     void FixedUpdate()
     {
+        if (Input.GetKey(KeyCode.Space) && Application.isEditor)
+        {
+            StartCoroutine(_sceneTransitions.LoadScene());
+        }
+
         if (Input.GetKey(KeyCode.RightArrow) && Time.time > podeMover)
         {
             body.velocity = new Vector2(speed, 0);
-             anim.Play("RunRight");
+            anim.Play("RunRight");
             DireçãoPersonagem();
             //anim.SetTrigger("AndandoDireita");
             direita = true;
@@ -42,7 +49,7 @@ public class Player : MonoBehaviour
         {
 
             body.velocity = new Vector2(-speed, 0);
-             anim.Play("RunLeft");
+            anim.Play("RunLeft");
             DireçãoPersonagem();
             //anim.SetTrigger("AndandoEsquerda");
             esquerda = true;
@@ -52,7 +59,7 @@ public class Player : MonoBehaviour
         {
 
             body.velocity = new Vector2(0, speed);
-             anim.Play("RunUp");
+            anim.Play("RunUp");
             //anim.SetTrigger("AndandoCima");
             DireçãoPersonagem();
             cima = true;
@@ -62,7 +69,7 @@ public class Player : MonoBehaviour
         {
 
             body.velocity = new Vector2(0, -speed);
-             anim.Play("RunDown");
+            anim.Play("RunDown");
             //anim.SetTrigger("AndandoBaixo");
             DireçãoPersonagem();
             baixo = true;
@@ -73,10 +80,10 @@ public class Player : MonoBehaviour
 
     private void DireçãoPersonagem()
     {
-         baixo = false;
-         cima = false;
-         direita = false;
-         esquerda = false;
+        baixo = false;
+        cima = false;
+        direita = false;
+        esquerda = false;
 
         podeMover = Time.time + 1.0f;
     }
